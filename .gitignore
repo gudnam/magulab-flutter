@@ -38,3 +38,6 @@ lib/generated_plugin_registrant.dart
 
 # Google Service
 google-services.json
+
+# VSCode setting
+.vscode
