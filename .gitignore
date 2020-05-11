@@ -41,3 +41,16 @@ google-services.json
 
 # VSCode setting
 .vscode
+
+# Node
+node_modules/
+
+# Lock
+*.lock
+pubspec.lock
+package-lock.json
+
+
+# RC
+.eslintrc.json
+.firebaserc
