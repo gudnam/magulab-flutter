@@ -14,10 +14,10 @@ const Map<Collection, String> CollectionIds = {
   Collection.matches: 'matches',
 };
 const Map<Collection, String> DocumentIds = {
-  Collection.users: 'user-',
-  Collection.sales: 'sale-',
-  Collection.requests: 'request-',
-  Collection.matches: 'match-',
+  Collection.users: 'user/',
+  Collection.sales: 'sale/',
+  Collection.requests: 'request/',
+  Collection.matches: 'match/',
 };
 
 class DatabaseService with ChangeNotifier {

@@ -12,9 +12,10 @@ class WrapperPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FirebaseProvider firebaseProvider = Provider.of<FirebaseProvider>(context);
-    if (firebaseProvider.getUser() != null &&
-        firebaseProvider.getUser().isEmailVerified == true) {
-      return HomePage();
+    if (firebaseProvider.getFirebaseUser() != null &&
+        firebaseProvider.getFirebaseUser().isEmailVerified == true) {
+      // return HomePage(); TODO Login TEST
+      return SignInPage();
     } else {
       return SignInPage();
     }

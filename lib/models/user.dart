@@ -4,4 +4,11 @@ class User {
   final String email;
 
   User({this.id, this.name, this.email});
+
+  factory User.fromJson(dynamic json) {
+    return User(
+        id: json['id'] as String,
+        name: json['name'] as String,
+        email: json['email'] as String);
+  }
 }
